@@ -1,0 +1,113 @@
+*{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+    
+}
+
+body{
+    background-image: url('./images/body-bg.jpg');
+    color: white;
+}
+.main-title{
+    /* border: 2px solid white;     */
+    text-align: center;    
+}
+
+
+.header-container{    
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.instruction-container__before-loading{
+    text-align: center;
+  
+}
+
+.instruction-container__after-loading{
+    
+    display:none;    
+    
+}
+
+.instruction-container__after-loading h3{
+    text-align: center;
+}
+
+.dice-result{
+    display:flex;
+    justify-content: space-around
+}
+
+
+.choice-container__first-row{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;    
+}
+
+
+.choice-container__second-row{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.numbers{
+    background-color: transparent; /* Green */
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 25px 40px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.numbers:hover{
+    background-color: grey;
+}
+
+.guess-checker{
+    /* border:2px solid white; */
+    margin-top: 20px;
+    text-align: center;
+    background-color: grey;
+    padding: 2px 2px;    
+}
+
+.guess-inner{
+    display:none;
+}
+
+.restart-btn{
+    background-color: transparent; 
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;    
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.restart{
+    text-align: center;
+}
+
+.restart-btn:hover{
+    background-color: rgb(207, 37, 37);    
+}
