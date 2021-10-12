@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="styles.css">   
+</head>
+
+<body onload='onLoader()'>    <!-- /*using for loading screen*/ -->
+
+    <div class='main-title'>
+       <h1>Roll The Dice</h1>
+    </div>   
+
+    <div class='header-container'>
+        <div class='selection'>
+            <h2>Selected Variable:</h2>
+        </div>
+
+        <div class='score'>
+            <h2>Score:</h2>
+        </div>
+    </div>
+
+    <div class='dice-result'>
+       
+    </div>
+
+    <div class='instruction-container__before-loading'>
+        <h3>Loading! Game will start in a few seconds</h3>        
+    </div>
+
+    <div class='instruction-container__after-loading'>
+        <h3>Make your choice!</h3>
+        <h3 class='time-change'>Time till next shuffle</h3>
+    </div>
+    
+    <div class='choice-container__first-row'>
+            <div class='one'>
+                <button class='numbers one' value='1'>1</button>
+            </div>
+
+            <div class='two'>
+                <button class='numbers two' value='2'>2</button>
+            </div>
+
+            <div class='three'>
+                <button class='numbers' value='3'>3</button>
+            </div>
+    </div>
+
+    <div class='choice-container__second-row'>
+        <div class='four'>
+            <button class='numbers' value='4'>4</button>
+        </div>
+
+        <div class='five'>
+            <button class='numbers' value='5'>5</button>
+        </div>
+
+        <div class='six'>
+            <button class='numbers' value='6'>6</button>
+        </div>
+</div>
+
+
+    <div class='guess-checker'>
+        <p class='guess-inner'></p>        
+    </div>
+
+
+    <div class='restart'>
+        <button onclick="restartGame()" class='restart-btn'>Restart</button>
+    </div>
+
+    
+<script src="index.js"></script>
+</body>
+</html>
